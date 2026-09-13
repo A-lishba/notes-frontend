@@ -1,24 +1,42 @@
-# Notes App - Frontend
+# Notes App Frontend
 
-A sleek, responsive dark-themed React application built with Vite and Axios for managing notes.
+A responsive single-page React application for managing notes with integrated user authentication.
 
 ## Features
-- **Live Sync:** Real-time synchronization with Express/MongoDB backend.
-- **Full CRUD:** Create, view, inline edit, and delete notes.
-- **Modern UI:** Styled with custom CSS, neon accents, and dark theme layout.
+- **User Authentication UI**: Dynamic Login/Signup views with inline error messaging.
+- **Token Persistence**: JWT stored securely in `localStorage` for uninterrupted sessions.
+- **Notes Dashboard**:
+  - View all user notes in a responsive CSS Grid card layout.
+  - Create new notes with title and description.
+  - **Inline Editing**: Quick inline editing mode for existing notes.
+  - Single-click note deletion.
+- **Responsive Dark UI**: Modern dark theme with custom styled input controls and interactive state indicators.
 
 ## Tech Stack
-- **Framework:** React (Vite)
-- **HTTP Client:** Axios
-- **Styling:** Custom CSS3
+- **Library**: React.js (Vite)
+- **HTTP Client**: Axios
+- **Styling**: Pure CSS3 (Flexbox & CSS Grid)
 
-## Setup & Running Instructions
+---
 
-1. **Clone the repository:**
+## Getting Started & Local Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- Backend API running on `http://localhost:5000/notes`
+
+### Installation & Execution
+
+1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/A-lishba/notes-frontend.git](https://github.com/A-lishba/notes-frontend.git)
+   git clone (https://github.com/A-lishba/notes-frontend)
    cd notes-frontend
 
-2. **Install dependencies:** npm install
-3. **Start the development server:** npm run dev
-4. **Access the application:** Open http://localhost:5173/ in your browser.
+2. **Install Dependencies**
+     e.g npm install bcrypt
+
+3. **Start Development Server**
+    npm run dev
+
+4. **Access Application**
+    Open your browser and navigate to http://localhost:5173
